@@ -33,7 +33,7 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col("FRUIT
 #st.stop()
 
 # convert snowspart dataframe to pandas dataframe so we can use the LOC function.
-pd_df = my_dataframe.pandas()
+pd_df = my_dataframe.to_pandas()
 st.datafram(pd_df);
 st.stop()
 
